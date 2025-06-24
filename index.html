@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deandra Wiguna | Network Engineer & Programmer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 transition-all duration-300 dark:bg-gray-900 dark:text-white font-sans">
+  <!-- Toggle -->
+  <button id="toggleTheme" class="absolute top-4 right-4 px-4 py-2 rounded border border-gray-300 dark:border-white text-sm">
+    🌗 Mode
+  </button>
+
+  <!-- Header -->
+  <header class="text-center py-10" data-aos="fade-down">
+    <h1 class="text-4xl font-bold">👋 Hi, I'm Deandra Wiguna!</h1>
+    <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Network Engineer | Programmer | Tech Learner</p>
+  </header>
+
+  <!-- About -->
+  <section class="px-6 md:px-20 py-10 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-4"># Deandra-Arta</h2>
+    <p class="text-gray-700 dark:text-gray-300">
+      Saya adalah Mahasiswa Teknik Informatika, dan juga alumni siswa SMK jurusan Teknik Jaringan Komputer dan Telekomunikasi yang juga antusias dalam bidang pemrograman dan eksplorasi teknologi. Saya terbiasa bekerja dengan perangkat jaringan seperti router, AP, dan perangkat lunak seperti Wireshark serta terminal. Tetapi saat ini saya membuat proyek untuk mengasah skill Python dan memperdalam pemahaman tentang keamanan jaringan.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="px-6 md:px-20 py-10" data-aos="fade-right">
+    <h2 class="text-2xl font-semibold mb-4">🧠 Skills</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-700 dark:text-gray-300">
+      <li>✔️ UTP, STP, Coaxial, Fiber Optic</li>
+      <li>✔️ Mikrotik Basic</li>
+      <li>✔️ OS Installation</li>
+      <li>✔️ Access Point Basic</li>
+      <li>✔️ Router Basic</li>
+      <li>✔️ Python</li>
+      <li>✔️ HTML & CSS</li>
+    </ul>
+  </section>
+
+  <!-- Tools -->
+  <section class="px-6 md:px-20 py-10 bg-gray-100 dark:bg-gray-800" data-aos="fade-left">
+    <h2 class="text-2xl font-semibold mb-4">🧰 Tools</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-700 dark:text-gray-300">
+      <li>🛠️ GitHub</li>
+      <li>🛠️ VS Code</li>
+      <li>🛠️ Wireshark</li>
+      <li>🛠️ VirtualBox</li>
+      <li>🛠️ SecureCRT</li>
+      <li>🛠️ Terminal</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="px-6 md:px-20 py-10" data-aos="zoom-in">
+    <h2 class="text-2xl font-semibold mb-4">📂 Projects</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold">🔍 Web Vulnerability Scanner</h3>
+        <p class="text-gray-600 dark:text-gray-300">A simple Python-based scanner for finding common website vulnerabilities.</p>
+        <a href="https://github.com/deandrawiguna/web-vuln-scanner" class="text-blue-500 hover:underline">Lihat Repository →</a>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">🎮 Game Login Automation</h3>
+        <p class="text-gray-600 dark:text-gray-300">Python script to auto-login into game accounts securely.</p>
+        <a href="https://github.com/deandrawiguna/game-login-automation" class="text-blue-500 hover:underline">Lihat Repository →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="px-6 md:px-20 py-10 bg-gray-100 dark:bg-gray-800" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold mb-4">📫 Contact</h2>
+    <p class="text-gray-700 dark:text-gray-300">Email: <a href="mailto:deandrawiguna@gmail.com" class="text-blue-500">deandrawiguna@gmail.com</a></p>
+    <p class="text-gray-700 dark:text-gray-300">LinkedIn: <span class="italic">[Belum tersedia]</span></p>
+  </section>
+
+  <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400">
+    &copy; 2025 Deandra Wiguna. All rights reserved.
+  </footer>
+
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggle = document.getElementById("toggleTheme");
+    const root = document.documentElement;
+
+    // Load theme from localStorage
+    if (localStorage.getItem("theme") === "dark") {
+      root.classList.add("dark");
+    }
+
+    toggle.addEventListener("click", () => {
+      root.classList.toggle("dark");
+      localStorage.setItem("theme", root.classList.contains("dark") ? "dark" : "light");
+    });
+  </script>
+</body>
+</html>
